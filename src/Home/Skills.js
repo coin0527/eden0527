@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Title } from "../components/Title";
 
 const Wrap = styled.div`
   width: 100%;
@@ -6,5 +7,9 @@ const Wrap = styled.div`
 `;
 
 export const Skills = () => {
-  return <Wrap></Wrap>;
+  return (
+    <Wrap>
+      <Title titlename="Skills" />
+    </Wrap>
+  );
 };
