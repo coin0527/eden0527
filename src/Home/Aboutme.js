@@ -31,6 +31,7 @@ const Profile = styled.div`
   grid-row-gap: 100px;
   font-size: 20px;
   align-items: center;
+  color: #453a33;
 `;
 
 const Con = styled.div`
@@ -56,6 +57,7 @@ const Email = styled(CenteredDiv)``;
 const Spec = styled(CenteredDiv)``;
 const Semicon = styled.div`
   margin-bottom: 10px;
+  font-weight: 600;
 `;
 
 export const Aboutme = () => {

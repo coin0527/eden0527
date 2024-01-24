@@ -17,10 +17,12 @@ const Container = styled.div`
   h2 {
     margin-bottom: 10px;
     font-size: 30px;
+    font-weight: bold;
   }
   h3 {
     margin-bottom: 10px;
     font-size: 40px;
+    font-weight: 600;
   }
   p {
     letter-spacing: -1px;
@@ -30,7 +32,7 @@ const Container = styled.div`
 
 const Line = styled.div`
   width: 100%;
-  max-width: 30px;
+  max-width: 50px;
   border: 1px solid #453a33;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -59,7 +61,7 @@ export const Banner = () => {
         <Line />
         <p> 안녕하세요. </p>
         <p> 프론트엔드 개발을 꿈꾸는 개발자 지망생입니다. </p>
-        <p> 해야할 일이 있다면, 끝까지 최선을 다하는 것이 저의 장점입니다. </p>
+        <p> 맡은 일을 끝까지 최선을 다하는 것이 저의 장점입니다. </p>
         <Button> More View </Button>
       </Container>
     </Wrap>
