@@ -6,6 +6,7 @@ import { Archiving } from "./Archiving";
 import { Project } from "./Project";
 import { Career } from "./Career";
 import { License } from "./License";
+import { Footer } from "../components/Footer";
 
 const Wrap = styled.div``;
 

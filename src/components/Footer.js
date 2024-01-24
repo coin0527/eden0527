@@ -3,8 +3,6 @@ import styled from "styled-components";
 const Wrap = styled.div`
   width: 100%;
   height: 80px;
-  position: fixed; /* 변경된 부분: fixed로 설정 */
-  bottom: 0;
   background-color: #453a33;
   h3 {
     color: white;
