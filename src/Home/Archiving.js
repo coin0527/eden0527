@@ -13,16 +13,18 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 `;
+
 const Box = styled.div`
   margin-top: 30px;
   width: 600px;
-  height: 300px;
+  height: 280px;
   border: 1px solid #eeeeee;
   border-radius: 20px;
   margin: 30px auto;
   cursor: pointer;
   padding: 30px 5%;
   background-color: #fff;
+  transition: border 0.5s ease, transform 0.5s ease;
 
   h2 {
     font-size: 30px;
@@ -38,7 +40,7 @@ const Box = styled.div`
 
   &:hover {
     border: 1px solid #453a33;
-    transition: 0.5s;
+    transform: translateY(8px);
   }
 `;
 
