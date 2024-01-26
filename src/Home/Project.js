@@ -1,11 +1,11 @@
+// Project.js
 import React from "react";
 import styled from "styled-components";
 import { Title } from "../components/Title";
 import { Projecttitle } from "../components/Projecttitle";
 import { ProjectImg } from "../components/ProjectImg";
 import { Projectmain } from "../components/Projectmain";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { Projecttech } from "../components/Projecttech";
 
 const Wrap = styled.div`
   width: 100%;
@@ -20,7 +20,7 @@ const Container = styled.div`
 `;
 
 const Box = styled.div`
-  height: 700px;
+  height: 750px;
   background-color: #fff;
   border-radius: 20px;
   padding: 30px 5%;
@@ -30,13 +30,34 @@ const Box = styled.div`
   }
 `;
 
-const Mainp = styled.div`
-  text-align: left;
-  display: flex;
-  margin-bottom: 10px;
-  h2 {
-    font-size: 18px;
-    font-weight: bold;
+const Code = styled.button`
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #34495e;
+  }
+`;
+
+const Demo = styled.button`
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2980b9;
   }
 `;
 
@@ -50,119 +71,32 @@ export const Project = () => {
         <Box>
           <Projecttitle pname="Weather App" />
           <ProjectImg imgSrc={weatherAppImage} />
-          <Mainp>
-            <FontAwesomeIcon
-              icon={faCheck}
-              style={{
-                marginRight: "10px",
-                marginTop: "10px",
-                fontSize: "18px",
-              }}
-            />
-            <h2 style={{ marginTop: "10px" }}>주요기능</h2>
-          </Mainp>
-          <h3 style={{ marginTop: "10px" }}>
-            현재 위치의 날씨 정보를 알아오는 어플리케이션
+          <Projecttech name="주요기능" />
+          <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
+            API를 활용해 현재 위치의 날씨 정보를 알아오는 어플리케이션
           </h3>
           <Projectmain />
-          <Mainp>
-            <FontAwesomeIcon
-              icon={faCheck}
-              style={{
-                marginRight: "10px",
-                fontSize: "18px",
-              }}
-            />
-            <h2>Period (2023.11~)</h2>
-          </Mainp>
-          <Mainp>
-            <FontAwesomeIcon
-              icon={faCheck}
-              style={{
-                marginRight: "10px",
-                fontSize: "18px",
-              }}
-            />
-            <h2> Tech HTML5, JavaScript, axios </h2>
-          </Mainp>
+          <Projecttech name="Period" />
+          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <Projecttech name="Tech" />
+          <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript, axios</h3>
+          <Projecttech name="GitHub" />
+          <Code> 코드 </Code>
+          <Demo> Demo </Demo>
         </Box>
         <Box>
-          <Projecttitle pname="Weather App" />
+          <Projecttitle pname="Movie App" />
           <ProjectImg imgSrc={weatherAppImage} />
-          <Mainp>
-            <FontAwesomeIcon
-              icon={faCheck}
-              style={{
-                marginRight: "10px",
-                marginTop: "10px",
-                fontSize: "18px",
-              }}
-            />
-            <h2 style={{ marginTop: "10px" }}>주요기능</h2>
-          </Mainp>
-          <h3 style={{ marginTop: "10px" }}>
-            현재 위치의 날씨 정보를 알아오는 어플리케이션
-          </h3>
+          <Projecttech name="주요기능" />
+          <h3 style={{ marginTop: "10px" }}>-</h3>
           <Projectmain />
-          <Mainp>
-            <FontAwesomeIcon
-              icon={faCheck}
-              style={{
-                marginRight: "10px",
-                fontSize: "18px",
-              }}
-            />
-            <h2>Period (2023.11~)</h2>
-          </Mainp>
-          <Mainp>
-            <FontAwesomeIcon
-              icon={faCheck}
-              style={{
-                marginRight: "10px",
-                fontSize: "18px",
-              }}
-            />
-            <h2> Tech HTML5, JavaScript, axios </h2>
-          </Mainp>
-        </Box>
-        <Box>
-          <Projecttitle pname="Weather App" />
-          <ProjectImg imgSrc={weatherAppImage} />
-          <Mainp>
-            <FontAwesomeIcon
-              icon={faCheck}
-              style={{
-                marginRight: "10px",
-                marginTop: "10px",
-                fontSize: "18px",
-              }}
-            />
-            <h2 style={{ marginTop: "10px" }}>주요기능</h2>
-          </Mainp>
-          <h3 style={{ marginTop: "10px" }}>
-            현재 위치의 날씨 정보를 알아오는 어플리케이션
-          </h3>
-          <Projectmain />
-          <Mainp>
-            <FontAwesomeIcon
-              icon={faCheck}
-              style={{
-                marginRight: "10px",
-                fontSize: "18px",
-              }}
-            />
-            <h2>Period (2023.11~)</h2>
-          </Mainp>
-          <Mainp>
-            <FontAwesomeIcon
-              icon={faCheck}
-              style={{
-                marginRight: "10px",
-                fontSize: "18px",
-              }}
-            />
-            <h2> Tech HTML5, JavaScript, axios </h2>
-          </Mainp>
+          <Projecttech name="Period" />
+          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <Projecttech name="Tech" />
+          <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript, axios</h3>
+          <Projecttech name="GitHub" />
+          <Code> 코드 </Code>
+          <Demo> Demo </Demo>
         </Box>
       </Container>
     </Wrap>
