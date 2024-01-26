@@ -1,4 +1,3 @@
-// Project.js
 import React from "react";
 import styled from "styled-components";
 import { Title } from "../components/Title";
@@ -20,7 +19,7 @@ const Container = styled.div`
 `;
 
 const Box = styled.div`
-  height: 750px;
+  height: 800px;
   background-color: #fff;
   border-radius: 20px;
   padding: 30px 5%;
@@ -88,12 +87,88 @@ export const Project = () => {
           <Projecttitle pname="Movie App" />
           <ProjectImg imgSrc={weatherAppImage} />
           <Projecttech name="주요기능" />
-          <h3 style={{ marginTop: "10px" }}>-</h3>
+          <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
+            API를 이용해 최신 유행하는 영화의 정보를 쉽고 빠르게 가져올 수 있고
+            검색을 통해 원하는 영화를 찾아볼 수 있다.
+          </h3>
           <Projectmain />
           <Projecttech name="Period" />
           <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
           <Projecttech name="Tech" />
-          <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript, axios</h3>
+          <h3 style={{ marginTop: "10px" }}>
+            HTML5, CSS3, JavaScript, React, React Hook Form
+          </h3>
+          <Projecttech name="GitHub" />
+          <Code> 코드 </Code>
+          <Demo> Demo </Demo>
+        </Box>
+        <Box>
+          <Projecttitle pname="Todo App" />
+          <ProjectImg imgSrc={weatherAppImage} />
+          <Projecttech name="주요기능" />
+          <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
+            로컬스토리지를 활용해 기존의 정보를 저장 할 수 있다.
+            <br /> 할 일을 추가, 삭제, 완료, 수정하여 계획 수립에 도움을 준다.
+          </h3>
+          <Projectmain />
+          <Projecttech name="Period" />
+          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <Projecttech name="Tech" />
+          <h3 style={{ marginTop: "10px" }}>
+            HTML5, CSS3, JavaScript, React, React Hook Form
+          </h3>
+          <Projecttech name="GitHub" />
+          <Code> 코드 </Code>
+          <Demo> Demo </Demo>
+        </Box>
+        <Box>
+          <Projecttitle pname="Random Number" />
+          <ProjectImg imgSrc={weatherAppImage} />
+          <Projecttech name="주요기능" />
+          <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
+            랜덤을 사용하여 최소값과 최대값 사이의 값을 도출해낸다.
+          </h3>
+          <Projectmain />
+          <Projecttech name="Period" />
+          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <Projecttech name="Tech" />
+          <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript</h3>
+          <Projecttech name="GitHub" />
+          <Code> 코드 </Code>
+          <Demo> Demo </Demo>
+        </Box>
+        <Box>
+          <Projecttitle pname="Classic Game" />
+          <ProjectImg imgSrc={weatherAppImage} />
+          <Projecttech name="주요기능" />
+          <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
+            언제 어디서나 남녀노소 즐길수있는 고전게임을 즐길 수 있다.
+          </h3>
+          <Projectmain />
+          <Projecttech name="Period" />
+          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <Projecttech name="Tech" />
+          <h3 style={{ marginTop: "10px" }}>
+            HTML5, CSS3, JavaScript, React, React Hook Form
+          </h3>
+          <Projecttech name="GitHub" />
+          <Code> 코드 </Code>
+          <Demo> Demo </Demo>
+        </Box>
+        <Box>
+          <Projecttitle pname="Frontend Portfolio" />
+          <ProjectImg imgSrc={weatherAppImage} />
+          <Projecttech name="주요기능" />
+          <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
+            개인 포트폴리오를 저장 및 관리하기 위한 사이트 구성이다.
+          </h3>
+          <Projectmain />
+          <Projecttech name="Period" />
+          <h3 style={{ marginTop: "10px" }}>2024.01.23~2024.01.31</h3>
+          <Projecttech name="Tech" />
+          <h3 style={{ marginTop: "10px" }}>
+            HTML5, JavaScript, React, React Hook Form
+          </h3>
           <Projecttech name="GitHub" />
           <Code> 코드 </Code>
           <Demo> Demo </Demo>
