@@ -76,7 +76,7 @@ export const Project = () => {
           </h3>
           <Projectmain />
           <Projecttech name="Period" />
-          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <h3 style={{ marginTop: "10px" }}>2023.11.13~11.22</h3>
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript, axios</h3>
           <Projecttech name="GitHub" />
@@ -93,7 +93,7 @@ export const Project = () => {
           </h3>
           <Projectmain />
           <Projecttech name="Period" />
-          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <h3 style={{ marginTop: "10px" }}>2023.11.23~2023.12.06</h3>
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>
             HTML5, CSS3, JavaScript, React, React Hook Form
@@ -112,7 +112,7 @@ export const Project = () => {
           </h3>
           <Projectmain />
           <Projecttech name="Period" />
-          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <h3 style={{ marginTop: "10px" }}>2023.12.07~2023.12.18</h3>
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>
             HTML5, CSS3, JavaScript, React, React Hook Form
@@ -130,7 +130,7 @@ export const Project = () => {
           </h3>
           <Projectmain />
           <Projecttech name="Period" />
-          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <h3 style={{ marginTop: "10px" }}>2024.01.17~2024.01.18</h3>
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript</h3>
           <Projecttech name="GitHub" />
@@ -146,7 +146,7 @@ export const Project = () => {
           </h3>
           <Projectmain />
           <Projecttech name="Period" />
-          <h3 style={{ marginTop: "10px" }}>2023.11~</h3>
+          <h3 style={{ marginTop: "10px" }}>2024.01.19~2024.01.23</h3>
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>
             HTML5, CSS3, JavaScript, React, React Hook Form
