@@ -40,7 +40,7 @@ export const SlideMenu = styled.div`
   left: 0;
   width: 100%;
   background-color: #fff;
-  display: ${(props) => (props.isOpen ? "block" : "none")};
+  display: ${(props) => (props.isopen ? "block" : "none")};
   animation: ${slideDown} 0.5s ease-in-out;
   padding: 30px 5%;
   p {

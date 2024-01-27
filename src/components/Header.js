@@ -22,7 +22,7 @@ export const Header = () => {
           style={{ cursor: "pointer", color: "#453a33" }}
           onClick={toggleMenu}
         />
-        <SlideMenu isOpen={isMenuOpen}>
+        <SlideMenu isopen={isMenuOpen}>
           <p>About me</p>
           <p>Skills</p>
           <p>Archiving</p>

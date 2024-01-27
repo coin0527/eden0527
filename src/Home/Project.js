@@ -5,7 +5,6 @@ import { Projecttitle } from "../components/Projecttitle";
 import { ProjectImg } from "../components/ProjectImg";
 import { Projectmain } from "../components/Projectmain";
 import { Projecttech } from "../components/Projecttech";
-
 const Wrap = styled.div`
   width: 100%;
   padding: 30px 5%;
@@ -61,7 +60,11 @@ const Demo = styled.button`
 `;
 
 export const Project = () => {
-  const weatherAppImage = "../Img/weatherapp.PNG";
+  const weatherAppImage = process.env.PUBLIC_URL + "/Img/weatherapp.PNG";
+  const JMovie = process.env.PUBLIC_URL + "/Img/JMovie.PNG";
+  const NumberImage = process.env.PUBLIC_URL + "/Img/Number.PNG";
+  const pp = process.env.PUBLIC_URL + "/Img/pp.PNG";
+  const todoImage = process.env.PUBLIC_URL + "/Img/todo.PNG";
 
   return (
     <Wrap>
@@ -85,7 +88,7 @@ export const Project = () => {
         </Box>
         <Box>
           <Projecttitle pname="Movie App" />
-          <ProjectImg imgSrc={weatherAppImage} />
+          <ProjectImg imgSrc={JMovie} />
           <Projecttech name="주요기능" />
           <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
             API를 이용해 최신 유행하는 영화의 정보를 쉽고 빠르게 가져올 수 있고
@@ -104,7 +107,7 @@ export const Project = () => {
         </Box>
         <Box>
           <Projecttitle pname="Todo App" />
-          <ProjectImg imgSrc={weatherAppImage} />
+          <ProjectImg imgSrc={todoImage} />
           <Projecttech name="주요기능" />
           <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
             로컬스토리지를 활용해 기존의 정보를 저장 할 수 있다.
@@ -123,7 +126,7 @@ export const Project = () => {
         </Box>
         <Box>
           <Projecttitle pname="Random Number" />
-          <ProjectImg imgSrc={weatherAppImage} />
+          <ProjectImg imgSrc={NumberImage} />
           <Projecttech name="주요기능" />
           <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
             랜덤을 사용하여 최소값과 최대값 사이의 값을 도출해낸다.
@@ -157,7 +160,7 @@ export const Project = () => {
         </Box>
         <Box>
           <Projecttitle pname="Frontend Portfolio" />
-          <ProjectImg imgSrc={weatherAppImage} />
+          <ProjectImg imgSrc={pp} />
           <Projecttech name="주요기능" />
           <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
             개인 포트폴리오를 저장 및 관리하기 위한 사이트 구성이다.

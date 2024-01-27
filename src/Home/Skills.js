@@ -17,7 +17,7 @@ const Box = styled.div`
   height: 60vh;
   border: 1px solid #453a33;
   border-radius: 10px;
-  background: url(${(props) => props.backgroundImage}) center;
+  background: url(${(props) => props.backgroundimage}) center;
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;
 
@@ -37,12 +37,12 @@ export const Skills = () => {
     <Wrap>
       <Title titlename="Skills" />
       <Container>
-        <Box backgroundImage={frontendImage} style={{ marginRight: "10px" }}>
+        <Box backgroundimage={frontendImage} style={{ marginRight: "10px" }}>
           <Skilltitle title={"Frontend"} />
         </Box>
 
         <Box
-          backgroundImage={versionControlImage}
+          backgroundimage={versionControlImage}
           style={{ marginLeft: "10px" }}
         >
           <Skilltitle title={"Version Control"} />
