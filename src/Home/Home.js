@@ -4,9 +4,7 @@ import { Skills } from "./Skills";
 import { Banner } from "./Banner";
 import { Archiving } from "./Archiving";
 import { Project } from "./Project";
-import { Career } from "./Career";
-import { License } from "./License";
-import { Footer } from "../components/Footer";
+import { Contact } from "./Contact";
 
 const Wrap = styled.div``;
 
@@ -18,8 +16,7 @@ export const Home = () => {
       <Skills />
       <Archiving />
       <Project />
-      <Career />
-      <License />
+      <Contact />
     </Wrap>
   );
 };
