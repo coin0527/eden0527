@@ -16,13 +16,16 @@ const Container = styled.div`
 const Title = styled.div`
   display: flex;
 `;
+
 const Input = styled.input`
+  width: 100%; // Set width to 100%
   margin: 10px;
   padding: 10px;
   font-size: 16px;
 `;
 
 const MessageInput = styled.textarea`
+  width: 100%; // Set width to 100%
   margin: 10px;
   padding: 10px;
   font-size: 20px;
@@ -39,16 +42,19 @@ const InputWrap = styled.div`
 `;
 
 const Button = styled.button`
+  width: 100%;
   background-color: #4caf50;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  align-items: center;
 
   &:hover {
     background-color: #45a049;
@@ -68,10 +74,10 @@ export const Contact = () => {
         </Title>
       </Container>
       <InputWrap>
-        <Input type="text" placeholder="Your Name" />
-        <Input type="email" placeholder="Your Email" />
-        <MessageInput placeholder="Your Message" style={{ fontSize: "20px" }} />
-        <Button> SEND </Button>
+        <Input type="text" placeholder="name" />
+        <Input type="email" placeholder="E-mail" />
+        <MessageInput placeholder="Message" style={{ fontSize: "20px" }} />
+        <Button style={{ marginLeft: "10px" }}> SEND </Button>
       </InputWrap>
     </Wrap>
   );
