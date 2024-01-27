@@ -65,6 +65,7 @@ export const Project = () => {
   const NumberImage = process.env.PUBLIC_URL + "/Img/Number.PNG";
   const pp = process.env.PUBLIC_URL + "/Img/pp.PNG";
   const todoImage = process.env.PUBLIC_URL + "/Img/todo.PNG";
+  const gameImage = process.env.PUBLIC_URL + "/Img/game.PNG";
 
   return (
     <Wrap>
@@ -142,7 +143,7 @@ export const Project = () => {
         </Box>
         <Box>
           <Projecttitle pname="Classic Game" />
-          <ProjectImg imgSrc={weatherAppImage} />
+          <ProjectImg imgSrc={gameImage} />
           <Projecttech name="주요기능" />
           <h3 style={{ marginTop: "10px", lineHeight: "20px" }}>
             언제 어디서나 남녀노소 즐길수있는 고전게임을 즐길 수 있다.
