@@ -18,14 +18,14 @@ const Title = styled.div`
 `;
 
 const Input = styled.input`
-  width: 100%; // Set width to 100%
+  width: 100%;
   margin: 10px;
   padding: 10px;
   font-size: 16px;
 `;
 
 const MessageInput = styled.textarea`
-  width: 100%; // Set width to 100%
+  width: 100%;
   margin: 10px;
   padding: 10px;
   font-size: 20px;

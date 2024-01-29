@@ -59,6 +59,14 @@ const Demo = styled.button`
   }
 `;
 
+const openGitHub = (url) => {
+  window.open(url, "_blank");
+};
+
+const openDemo = (url) => {
+  window.open(url, "_blank");
+};
+
 export const Project = () => {
   const weatherAppImage = process.env.PUBLIC_URL + "/Img/weatherapp.PNG";
   const JMovie = process.env.PUBLIC_URL + "/Img/JMovie.PNG";
@@ -84,8 +92,18 @@ export const Project = () => {
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript, axios</h3>
           <Projecttech name="GitHub" />
-          <Code> Code </Code>
-          <Demo> Demo </Demo>
+          <Code
+            onClick={() =>
+              openGitHub("https://github.com/coin0527/weather_app")
+            }
+          >
+            Code
+          </Code>
+          <Demo
+            onClick={() => openDemo("https://coin0527.github.io/weather_app/")}
+          >
+            Demo
+          </Demo>
         </Box>
         <Box>
           <Projecttitle pname="Movie App" />
