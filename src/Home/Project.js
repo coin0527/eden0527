@@ -168,7 +168,7 @@ export const Project = () => {
           </h3>
           <Projectmain />
           <Projecttech name="Period" />
-          <h3 style={{ marginTop: "10px" }}>2024.01.23~2024.01.31</h3>
+          <h3 style={{ marginTop: "10px" }}>2024.01.23~2024.01.30</h3>
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>
             HTML5, JavaScript, React, React Hook Form

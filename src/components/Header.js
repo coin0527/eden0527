@@ -1,5 +1,7 @@
+// Header.js
+
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Wrap, Con, SlideMenu } from "../css/Headercss";
@@ -7,10 +9,29 @@ import { Link as ScrollLink } from "react-scroll";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        closeMenu();
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
 
   return (
     <Wrap>
@@ -23,7 +44,7 @@ export const Header = () => {
           style={{ cursor: "pointer", color: "#453a33" }}
           onClick={toggleMenu}
         />
-        <SlideMenu isopen={isMenuOpen}>
+        <SlideMenu ref={menuRef} isopen={isMenuOpen}>
           <ScrollLink
             to="aboutMe"
             spy={true}

@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { Element } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { useState } from "react";
 
 const Wrap = styled.div`
   background-color: #fff;
@@ -44,6 +47,7 @@ const Button = styled.button`
   border-radius: 30px;
   margin-top: 30px;
   background-color: #553f2d;
+  border: none;
   color: #fff;
   cursor: pointer;
   &:hover {
@@ -53,6 +57,12 @@ const Button = styled.button`
 `;
 
 export const Banner = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <Wrap>
       <Container>
@@ -62,7 +72,18 @@ export const Banner = () => {
         <p> 안녕하세요. </p>
         <p> 프론트엔드 개발을 꿈꾸는 개발자 지망생입니다. </p>
         <p> 맡은 일을 끝까지 최선을 다하는 것이 저의 장점입니다. </p>
-        <Button> More View </Button>
+        <Element name="about">
+          <ScrollLink
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={toggleMenu}
+            style={{ fontWeight: "500" }}
+          >
+            <Button> More View </Button>
+          </ScrollLink>
+        </Element>
       </Container>
     </Wrap>
   );
