@@ -5,6 +5,7 @@ import { Banner } from "./Banner";
 import { Archiving } from "./Archiving";
 import { Project } from "./Project";
 import { Contact } from "./Contact";
+import { Element } from "react-scroll";
 
 const Wrap = styled.div``;
 
@@ -12,10 +13,18 @@ export const Home = () => {
   return (
     <Wrap>
       <Banner />
-      <Aboutme />
-      <Skills />
-      <Archiving />
-      <Project />
+      <Element name="aboutMe">
+        <Aboutme />
+      </Element>
+      <Element name="Skills">
+        <Skills />
+      </Element>
+      <Element name="Archiving">
+        <Archiving />
+      </Element>
+      <Element name="Project">
+        <Project />
+      </Element>
       <Contact />
     </Wrap>
   );

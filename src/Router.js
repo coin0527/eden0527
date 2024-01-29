@@ -10,6 +10,7 @@ import { Archiving } from "./Home/Archiving";
 import { Project } from "./Home/Project";
 import { Career } from "./Home/Career";
 import { License } from "./Home/License";
+import { Pagenotfound } from "./components/Pagenotfound";
 
 export const Router = () => {
   return (
@@ -24,6 +25,7 @@ export const Router = () => {
         <Route path={routes.pr} element={<Project />} />
         <Route path={routes.ca} element={<Career />} />
         <Route path={routes.la} element={<License />} />
+        <Route path="/*" element={<Pagenotfound />} />
       </Routes>
       <Footer />
     </HashRouter>
