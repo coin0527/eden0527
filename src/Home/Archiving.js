@@ -1,3 +1,5 @@
+// Archiving.js
+
 import styled from "styled-components";
 import { Title } from "../components/Title";
 
@@ -14,7 +16,7 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Box = styled.div`
+const Box = styled.a`
   margin-top: 30px;
   width: 600px;
   height: 280px;
@@ -25,6 +27,7 @@ const Box = styled.div`
   padding: 30px 5%;
   background-color: #fff;
   transition: border 0.5s ease, transform 0.5s ease;
+  text-decoration: none;
 
   h2 {
     font-size: 30px;
@@ -54,7 +57,7 @@ export const Archiving = () => {
     <Wrap>
       <Title titlename="Archiving" />
       <Container>
-        <Box>
+        <Box href="https://github.com/coin0527" target="_blank">
           <h2> GitHub </h2>
           <Line />
           <h3> https://github.com/coin0527 </h3>
@@ -62,7 +65,10 @@ export const Archiving = () => {
           <p> ✦ 혼자서 코딩 연습을 위해 끄적이던 소스 코드 </p>
           <p> ✦ 학부 시절 수강한 수업들의 코딩 과제 소스 코드 </p>
         </Box>
-        <Box>
+        <Box
+          href="https://www.notion.so/Movie_project-69f5ff9570e441459913601d303305a1"
+          target="_blank"
+        >
           <h2> Notion </h2>
           <Line />
           <h3>

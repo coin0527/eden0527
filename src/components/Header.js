@@ -1,5 +1,3 @@
-// Header.js
-
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

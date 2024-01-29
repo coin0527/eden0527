@@ -32,14 +32,14 @@ const Code = styled.button`
   margin-top: 20px;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #2c3e50;
+  background-color: #453a33;
   color: #fff;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #34495e;
+    background-color: #6e5b4d;
   }
 `;
 
@@ -48,14 +48,14 @@ const Demo = styled.button`
   margin-left: 10px;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #3498db;
+  background-color: #8b4513;
   color: #fff;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #2980b9;
+    background-color: #a0522d;
   }
 `;
 
@@ -84,7 +84,7 @@ export const Project = () => {
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript, axios</h3>
           <Projecttech name="GitHub" />
-          <Code> 코드 </Code>
+          <Code> Code </Code>
           <Demo> Demo </Demo>
         </Box>
         <Box>
@@ -103,7 +103,7 @@ export const Project = () => {
             HTML5, CSS3, JavaScript, React, React Hook Form
           </h3>
           <Projecttech name="GitHub" />
-          <Code> 코드 </Code>
+          <Code> Code </Code>
           <Demo> Demo </Demo>
         </Box>
         <Box>
@@ -122,7 +122,7 @@ export const Project = () => {
             HTML5, CSS3, JavaScript, React, React Hook Form
           </h3>
           <Projecttech name="GitHub" />
-          <Code> 코드 </Code>
+          <Code> Code </Code>
           <Demo> Demo </Demo>
         </Box>
         <Box>
@@ -138,7 +138,7 @@ export const Project = () => {
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript</h3>
           <Projecttech name="GitHub" />
-          <Code> 코드 </Code>
+          <Code> Code </Code>
           <Demo> Demo </Demo>
         </Box>
         <Box>
@@ -156,7 +156,7 @@ export const Project = () => {
             HTML5, CSS3, JavaScript, React, React Hook Form
           </h3>
           <Projecttech name="GitHub" />
-          <Code> 코드 </Code>
+          <Code> Code </Code>
           <Demo> Demo </Demo>
         </Box>
         <Box>
@@ -174,7 +174,7 @@ export const Project = () => {
             HTML5, JavaScript, React, React Hook Form
           </h3>
           <Projecttech name="GitHub" />
-          <Code> 코드 </Code>
+          <Code> Code </Code>
           <Demo> Demo </Demo>
         </Box>
       </Container>
