@@ -94,7 +94,7 @@ export const Project = () => {
           <Projecttech name="GitHub" />
           <Code
             onClick={() =>
-              openGitHub("https://github.com/coin0527/weather_app")
+              openGitHub("https://github.com/coin0527/weather_app.git")
             }
           >
             Code
@@ -121,8 +121,20 @@ export const Project = () => {
             HTML5, CSS3, JavaScript, React, React Hook Form
           </h3>
           <Projecttech name="GitHub" />
-          <Code> Code </Code>
-          <Demo> Demo </Demo>
+          <Code
+            onClick={() =>
+              openGitHub("https://github.com/coin0527/stproject1_movie.git")
+            }
+          >
+            Code
+          </Code>
+          <Demo
+            onClick={() =>
+              openDemo("https://coin0527.github.io/stproject1_movie/")
+            }
+          >
+            Demo
+          </Demo>
         </Box>
         <Box>
           <Projecttitle pname="Todo App" />
@@ -140,8 +152,20 @@ export const Project = () => {
             HTML5, CSS3, JavaScript, React, React Hook Form
           </h3>
           <Projecttech name="GitHub" />
-          <Code> Code </Code>
-          <Demo> Demo </Demo>
+          <Code
+            onClick={() =>
+              openGitHub("https://github.com/coin0527/stproject2_todo.git")
+            }
+          >
+            Code
+          </Code>
+          <Demo
+            onClick={() =>
+              openDemo("https://coin0527.github.io/stproject2_todo/")
+            }
+          >
+            Demo
+          </Demo>
         </Box>
         <Box>
           <Projecttitle pname="Random Number" />
@@ -156,8 +180,20 @@ export const Project = () => {
           <Projecttech name="Tech" />
           <h3 style={{ marginTop: "10px" }}>HTML5, CSS3, JavaScript</h3>
           <Projecttech name="GitHub" />
-          <Code> Code </Code>
-          <Demo> Demo </Demo>
+          <Code
+            onClick={() =>
+              openGitHub("https://github.com/coin0527/stproject3_number.git")
+            }
+          >
+            Code
+          </Code>
+          <Demo
+            onClick={() =>
+              openDemo("https://coin0527.github.io/stproject3_number/")
+            }
+          >
+            Demo
+          </Demo>
         </Box>
         <Box>
           <Projecttitle pname="Classic Game" />
@@ -174,8 +210,21 @@ export const Project = () => {
             HTML5, CSS3, JavaScript, React, React Hook Form
           </h3>
           <Projecttech name="GitHub" />
-          <Code> Code </Code>
-          <Demo> Demo </Demo>
+          <Code
+            onClick={() =>
+              openGitHub("https://github.com/coin0527/stproject4_Game.git")
+            }
+          >
+            Code
+          </Code>
+          <Demo
+            onClick={() =>
+              openDemo("https://coin0527.github.io/stproject4_Game/")
+            }
+          >
+            Demo
+          </Demo>
+          {/* 데모 수정해야할듯.. 배포 이상하네 */}
         </Box>
         <Box>
           <Projecttitle pname="Frontend Portfolio" />
@@ -192,8 +241,15 @@ export const Project = () => {
             HTML5, JavaScript, React, React Hook Form
           </h3>
           <Projecttech name="GitHub" />
-          <Code> Code </Code>
-          <Demo> Demo </Demo>
+          <Code
+            onClick={() =>
+              openGitHub("https://github.com/coin0527/eden0527.git")
+            }
+          >
+            Code
+          </Code>
+          <Demo onClick={() => openDemo("")}>Demo</Demo>
+          {/* 아직 배포안함 */}
         </Box>
       </Container>
     </Wrap>

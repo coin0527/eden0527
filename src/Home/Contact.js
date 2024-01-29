@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
@@ -62,6 +63,24 @@ const Button = styled.button`
 `;
 
 export const Contact = () => {
+  const [formError, setFormError] = useState("");
+
+  const handleSendClick = () => {
+    // 각 필드의 값을 가져옴
+    const nameValue = document.querySelector('input[name="name"]').value;
+    const emailValue = document.querySelector('input[name="email"]').value;
+    const messageValue = document.querySelector(
+      'textarea[name="message"]'
+    ).value;
+
+    if (!nameValue || !emailValue || !messageValue) {
+      setFormError("양식이 잘못되었습니다 빈칸이 있는지 확인해주세요.");
+      return;
+    }
+
+    alert("메시지 전송 성공!");
+  };
+
   return (
     <Wrap>
       <Container>
@@ -74,10 +93,22 @@ export const Contact = () => {
         </Title>
       </Container>
       <InputWrap>
-        <Input type="text" placeholder="name" />
-        <Input type="email" placeholder="E-mail" />
-        <MessageInput placeholder="Message" style={{ fontSize: "20px" }} />
-        <Button style={{ marginLeft: "10px" }}> SEND </Button>
+        <Input type="text" name="name" placeholder="name" />
+        <Input type="email" name="email" placeholder="E-mail" />
+        <MessageInput
+          name="message"
+          placeholder="Message"
+          style={{ fontSize: "20px" }}
+        />
+        {formError && (
+          <p style={{ color: "crimson", textAlign: "center" }}>{formError}</p>
+        )}
+        <Button
+          style={{ marginLeft: "10px", marginTop: "10px" }}
+          onClick={handleSendClick}
+        >
+          SEND
+        </Button>
       </InputWrap>
     </Wrap>
   );
