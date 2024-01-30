@@ -17,13 +17,20 @@ const Box = styled.div`
   height: 60vh;
   border: 1px solid #453a33;
   border-radius: 10px;
-  background: url(${(props) => props.backgroundimage}) center;
-  background-repeat: no-repeat;
+
   transition: transform 0.3s ease-in-out;
 
   &:hover {
     transform: scale(0.95);
   }
+`;
+
+const Box2 = styled.div`
+  width: 100%;
+  max-width: 300px;
+  height: 45vh;
+  background: url(${(props) => props.backgroundimage}) center;
+  background-repeat: no-repeat;
 `;
 
 const Container = styled.div`
@@ -37,15 +44,20 @@ export const Skills = () => {
     <Wrap>
       <Title titlename="Skills" />
       <Container>
-        <Box backgroundimage={frontendImage} style={{ marginRight: "10px" }}>
+        <Box>
           <Skilltitle title={"Frontend"} />
+          <Box2
+            backgroundimage={frontendImage}
+            style={{ marginRight: "10px" }}
+          ></Box2>
         </Box>
 
-        <Box
-          backgroundimage={versionControlImage}
-          style={{ marginLeft: "10px" }}
-        >
+        <Box>
           <Skilltitle title={"Version Control"} />
+          <Box2
+            backgroundimage={versionControlImage}
+            style={{ marginLeft: "10px" }}
+          ></Box2>
         </Box>
       </Container>
     </Wrap>
