@@ -72,7 +72,7 @@ export const Project = () => {
   const JMovie = process.env.PUBLIC_URL + "/Img/JMovie.PNG";
   const NumberImage = process.env.PUBLIC_URL + "/Img/Number.PNG";
   const pp = process.env.PUBLIC_URL + "/Img/pp.PNG";
-  const todoImage = process.env.PUBLIC_URL + "/Img/todo.PNG";
+  const todoImage = process.env.PUBLIC_URL + "/Img/Todo.PNG";
   const gameImage = process.env.PUBLIC_URL + "/Img/game.PNG";
 
   return (
