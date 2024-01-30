@@ -219,12 +219,11 @@ export const Project = () => {
           </Code>
           <Demo
             onClick={() =>
-              openDemo("https://coin0527.github.io/stproject4_Game/")
+              openDemo("https://coin0527.github.io/stproject4_game/")
             }
           >
             Demo
           </Demo>
-          {/* 데모 수정해야할듯.. 배포 이상하네 */}
         </Box>
         <Box>
           <Projecttitle pname="Frontend Portfolio" />
@@ -248,8 +247,11 @@ export const Project = () => {
           >
             Code
           </Code>
-          <Demo onClick={() => openDemo("")}>Demo</Demo>
-          {/* 아직 배포안함 */}
+          <Demo
+            onClick={() => openDemo("https://coin0527.github.io/eden0527/")}
+          >
+            Demo
+          </Demo>
         </Box>
       </Container>
     </Wrap>

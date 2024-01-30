@@ -44,7 +44,7 @@ const InputWrap = styled.div`
 
 const Button = styled.button`
   width: 100%;
-  background-color: #4caf50;
+  background-color: #453a33;
   border: none;
   color: white;
   padding: 15px 30px;
@@ -58,7 +58,7 @@ const Button = styled.button`
   align-items: center;
 
   &:hover {
-    background-color: #45a049;
+    background-color: #6e5b4d;
   }
 `;
 
