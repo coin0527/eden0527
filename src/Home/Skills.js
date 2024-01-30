@@ -7,14 +7,14 @@ import versionControlImage from "../Img/versioncontrol.PNG";
 
 const Wrap = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   padding: 30px 5%;
 `;
 
 const Box = styled.div`
   width: 100%;
   max-width: 300px;
-  height: 60vh;
+  height: 70vh;
   border: 1px solid #453a33;
   border-radius: 10px;
 
@@ -28,7 +28,7 @@ const Box = styled.div`
 const Box2 = styled.div`
   width: 100%;
   max-width: 300px;
-  height: 45vh;
+  height: 500px;
   background: url(${(props) => props.backgroundimage}) center;
   background-repeat: no-repeat;
 `;
@@ -44,20 +44,14 @@ export const Skills = () => {
     <Wrap>
       <Title titlename="Skills" />
       <Container>
-        <Box>
+        <Box style={{ marginRight: "10px" }}>
           <Skilltitle title={"Frontend"} />
-          <Box2
-            backgroundimage={frontendImage}
-            style={{ marginRight: "10px" }}
-          ></Box2>
+          <Box2 backgroundimage={frontendImage}></Box2>
         </Box>
 
-        <Box>
+        <Box style={{ marginLeft: "10px" }}>
           <Skilltitle title={"Version Control"} />
-          <Box2
-            backgroundimage={versionControlImage}
-            style={{ marginLeft: "10px" }}
-          ></Box2>
+          <Box2 backgroundimage={versionControlImage}></Box2>
         </Box>
       </Container>
     </Wrap>
