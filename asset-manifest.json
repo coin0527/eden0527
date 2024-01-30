@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/eden0527/static/js/main.d63f0259.js",
+    "main.js": "/eden0527/static/js/main.d91488de.js",
     "static/media/frontend.PNG": "/eden0527/static/media/frontend.d90dcb8eaad3e1a9c918.PNG",
     "static/media/versioncontrol.PNG": "/eden0527/static/media/versioncontrol.0fdddf125c07450691af.PNG",
     "index.html": "/eden0527/index.html",
-    "main.d63f0259.js.map": "/eden0527/static/js/main.d63f0259.js.map"
+    "main.d91488de.js.map": "/eden0527/static/js/main.d91488de.js.map"
   },
   "entrypoints": [
-    "static/js/main.d63f0259.js"
+    "static/js/main.d91488de.js"
   ]
 }
