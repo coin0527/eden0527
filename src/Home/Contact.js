@@ -66,7 +66,6 @@ export const Contact = () => {
   const [formError, setFormError] = useState("");
 
   const handleSendClick = () => {
-    // 각 필드의 값을 가져옴
     const nameValue = document.querySelector('input[name="name"]').value;
     const emailValue = document.querySelector('input[name="email"]').value;
     const messageValue = document.querySelector(
@@ -77,8 +76,6 @@ export const Contact = () => {
       setFormError("양식이 잘못되었습니다 빈칸이 있는지 확인해주세요.");
       return;
     }
-
-    alert("메시지 전송 성공!");
   };
 
   return (
