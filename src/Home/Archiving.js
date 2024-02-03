@@ -63,15 +63,10 @@ export const Archiving = () => {
           <p> ✦ 혼자서 코딩 연습을 위해 끄적이던 소스 코드 </p>
           <p> ✦ 학부 시절 수강한 수업들의 코딩 과제 소스 코드 </p>
         </Box>
-        <Box
-          href="https://www.notion.so/Movie_project-69f5ff9570e441459913601d303305a1"
-          target="_blank"
-        >
+        <Box href="" target="_blank">
           <h2> Notion </h2>
           <Line />
-          <h3>
-            https://www.notion.so/Movie_project-69f5ff9570e441459913601d303305a1
-          </h3>
+          <h3>-페이지 수정중입니다-</h3>
           <p> ✦ 과거 프로젝트, 프로그램, App의 과정 </p>
           <p> ✦ 구체적인 계획, 일정표 </p>
           <p> ✦ 기획의도 및 프로젝트를 진행하며 느낀 점 </p>
