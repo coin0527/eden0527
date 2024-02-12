@@ -5,7 +5,3 @@
 ## period
 
 2024.01.23 ~ 2024.01.30 ~ ing
-
-## Next
-
-Youtube
