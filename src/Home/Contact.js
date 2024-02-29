@@ -16,6 +16,7 @@ const Container = styled.div`
 `;
 const Title = styled.div`
   display: flex;
+  padding: 30px 30px; // 상 우 하 좌(시계방향)
 `;
 
 const Input = styled.input`
@@ -56,6 +57,8 @@ const Button = styled.button`
   cursor: pointer;
   transition: background-color 0.3s ease;
   align-items: center;
+
+  transform: translate();
 
   &:hover {
     background-color: #6e5b4d;
