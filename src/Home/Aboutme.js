@@ -60,7 +60,6 @@ const Semicon = styled.div`
   font-weight: 600;
 `;
 
-// useEffect 추가예정
 export const Aboutme = () => {
   return (
     <Wrap>
