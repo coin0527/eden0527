@@ -11,7 +11,7 @@ export const Header = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
+  }; // 토글메뉴
 
   const closeMenu = () => {
     setIsMenuOpen(false);
