@@ -15,7 +15,7 @@ export const Header = () => {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-  };
+  }; // 닫기
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
