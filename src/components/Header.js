@@ -22,7 +22,7 @@ export const Header = () => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         closeMenu();
       }
-    };
+    }; // 바깥 닫기
 
     document.addEventListener("mousedown", handleOutsideClick);
 
