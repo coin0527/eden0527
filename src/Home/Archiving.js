@@ -4,7 +4,7 @@ import { Title } from "../components/Title";
 const Wrap = styled.div`
   width: 100%;
   padding: 30px 5%;
-  height: 100vh;
+  height: 60vh;
   background-color: beige;
 `;
 
@@ -62,14 +62,6 @@ export const Archiving = () => {
           <p> ✦ 과거 프로젝트, 프로그램, App의 소스코드 </p>
           <p> ✦ 혼자서 코딩 연습을 위해 끄적이던 소스 코드 </p>
           <p> ✦ 학부 시절 수강한 수업들의 코딩 과제 소스 코드 </p>
-        </Box>
-        <Box href="" target="_blank">
-          <h2> Notion </h2>
-          <Line />
-          <h3>-페이지 수정중입니다-</h3>
-          <p> ✦ 과거 프로젝트, 프로그램, App의 과정 </p>
-          <p> ✦ 구체적인 계획, 일정표 </p>
-          <p> ✦ 기획의도 및 프로젝트를 진행하며 느낀 점 </p>
         </Box>
       </Container>
     </Wrap>
